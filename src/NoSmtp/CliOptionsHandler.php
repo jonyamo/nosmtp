@@ -99,10 +99,10 @@ class CliOptionsHandler
 Usage: nosmtp [options]
 
 Specific options:
-   -m, --mailbox DIR   directory where the file will be saved. [default: /tmp]
-   -e, --ext     EXT   extension to be used for the file. [default: eml]
-   -f, --filter  RGXP  address filter. will only save emails sent to recipients
-                       matching the given pattern. [default: .*]
+   --mailbox DIR   directory where the file will be saved. [default: /tmp]
+   --ext     EXT   extension to be used for the file. [default: eml]
+   --filter  RGXP  address filter. will only save emails sent to recipients
+                   matching the given pattern. [default: .*]
 
 Common options:
    -h, --help          show this message
