@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit
+    colors="true"
+    bootstrap="tests/bootstrap.php">
+
+    <testsuites>
+        <testsuite name="NoSmtp Test Suite">
+            <directory>tests/NoSmtp</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/NoSmtp/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

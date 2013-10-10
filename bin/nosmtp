@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$opts_handler = new \NoSmtp\CliOptionsHandler;
+$raw_options = $opts_handler->getRawOptions();
+$opts_handler->handleExitOptions($raw_options);
+$options = $opts_handler->getValidatedOptions($raw_options);
+
+$nosmtp = new \NoSmtp\NoSmtp($options);
+$nosmtp->run();
